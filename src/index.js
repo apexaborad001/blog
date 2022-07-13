@@ -61,7 +61,9 @@ app.use(mung.json(function transform(body, req, res, next) {
     } 
   }));
 app.use("/", dbSwitch, router);
-
+app.get('/',(req,res)=>{
+  res.send("hello from blog application")
+})
 app.listen(port, () => {
   console.log("app is running on http://localhost:3000/");
 });
