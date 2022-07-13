@@ -6,7 +6,7 @@ const blogController =require("../controller/blog.controller")
 const moduleController = require("../controller/todolist.controller")
 router.post("/signUp",userController.signUp)
 router.get("/signIn",userController.signIn)
-router.put("/updateUser/:id",auth,userController.updateUserDetails)
+router.post("/updateUser/:id",auth,userController.updateUserDetails)
 router.delete("/deleteUser/:id",auth,userController.deleteUser)
 router.get("/search",auth,userController.searchName)
 
