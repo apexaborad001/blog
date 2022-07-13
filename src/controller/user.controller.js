@@ -41,7 +41,7 @@ const signUp = async (req, res) => {
 const signIn = async (req, res) => {
   try {
     console.log(req.body.email);
-    const userDetails = await User.findOne({ email: req.body.email });
+    const userDetails = await User.findOne({ email: req.body.email ,password:req.body.password});
     if (userDetails) {
       const token = jwt.sign(
         {

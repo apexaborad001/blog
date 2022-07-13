@@ -16,7 +16,7 @@ module.exports=(req)=>{
     let message={
         "SIGNIN":{
             "SUCCESS":"User SignIn successfully",
-            "NOT_FOUND":"Invalid Email",
+            "NOT_FOUND":"Invalid Email and Password",
             "ERROR":"Errror in SignIn User"
     
         },
